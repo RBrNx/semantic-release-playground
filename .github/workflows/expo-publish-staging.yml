@@ -1,0 +1,39 @@
+name: Expo Publish
+on:
+  push:
+    branches:
+      - staging
+jobs:
+  create-release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Install dependencies
+        run: yarn
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
+
+  publish:
+    name: Publish Staging Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - uses: expo/expo-github-action@v5
+        with:
+          expo-version: 4.x
+          expo-token: ${{ secrets.EXPO_TOKEN }}
+          expo-cache: true
+      - run: yarn install
+      - run: expo publish --release-channel staging
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
+          EXPO_USE_DEV_SERVER: true
