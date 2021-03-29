@@ -27,6 +27,7 @@
   },
   "private": true,
   "release": {
+    "branches": ["staging"],
     "verifyConditions": [
       "semantic-release-expo",
       "@semantic-release/changelog",
