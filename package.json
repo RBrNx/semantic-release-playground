@@ -32,8 +32,7 @@
       "semantic-release-expo",
       "@semantic-release/changelog",
       "@semantic-release/git",
-      "@semantic-release/github",
-      "@semantic-release/npm"
+      "@semantic-release/github"
     ],
     "generateNotes": [
       "@semantic-release/release-notes-generator"
@@ -41,13 +40,12 @@
     "prepare": [
       "semantic-release-expo",
       "@semantic-release/changelog",
-      "@semantic-release/npm",
       {
         "path": "@semantic-release/git",
         "assets": [
           "CHANGELOG.md",
           "package.json",
-          "package-lock.json",
+          "yarn.lock",
           "app.json"
         ]
       }
