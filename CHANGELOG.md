@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/RBrNx/semantic-release-playground/compare/v1.1.0...v1.1.1) (2021-03-29)
+
+
+### Bug Fixes
+
+* publish step should depend on create-release ([cf5ec5f](https://github.com/RBrNx/semantic-release-playground/commit/cf5ec5f1b0b6aecfdf34781ab054f76dbb9b6f37))
+
 # [1.1.0](https://github.com/RBrNx/semantic-release-playground/compare/v1.0.0...v1.1.0) (2021-03-29)
 
 
