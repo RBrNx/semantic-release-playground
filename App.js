@@ -4,7 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   console.log('chore');
-  console.log('feature')
+  console.log('feature');
+  console.log('another feature')
 
   return (
     <View style={styles.container}>
