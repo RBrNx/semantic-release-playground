@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/RBrNx/semantic-release-playground/compare/v1.0.0...v1.1.0) (2021-03-29)
+
+
+### Features
+
+* add feature console log ([5d1b0b1](https://github.com/RBrNx/semantic-release-playground/commit/5d1b0b1321a4167a6cb06619915f19080462be6a))
+* another feature ([c57a3be](https://github.com/RBrNx/semantic-release-playground/commit/c57a3bee798997751ee72b5bf6d2b01351a352cd))
+
 # 1.0.0 (2021-03-29)
 
 
